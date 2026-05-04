@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Nur Dwi Nova Pramajaya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background: #1e272e;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* NAV */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #0984e3, #6c5ce7);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* SECTION */
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #2d3436;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e272e;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="foto.jpg" class="profile-img" alt="Foto Profil">
+        <div class="name">Nur Dwi Nova Pramajaya</div>
+
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#data">Data Diri</a>
+            <a href="#hobi">Hobi</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Halo, Saya Nur Dwi Nova Pramajaya</h1>
+        <p>Selamat datang di website pribadi saya</p>
+    </div>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+        <div class="card">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah seorang yang memiliki semangat untuk belajar hal baru 
+                dan mengembangkan diri. Saya tertarik pada teknologi, desain, dan hal-hal kreatif.
+            </p>
+        </div>
+    </section>
+
+    <!-- DATA DIRI -->
+    <section id="data">
+        <div class="card">
+            <h2>Data Diri</h2>
+            <div class="grid">
+                <p><strong>Nama:</strong> Nur Dwi Nova Pramajaya</p>
+                <p><strong>Tempat, Tanggal Lahir:</strong> (isi)</p>
+                <p><strong>Alamat:</strong> (isi)</p>
+                <p><strong>Jenis Kelamin:</strong> (isi)</p>
+                <p><strong>Agama:</strong> (isi)</p>
+                <p><strong>Email:</strong> (isi)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOBI -->
+    <section id="hobi">
+        <div class="card">
+            <h2>Hobi & Minat</h2>
+            <ul>
+                <li>Bermain game</li>
+                <li>Mendengarkan musik</li>
+                <li>Belajar coding</li>
+                <li>Olahraga</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+        <div class="card">
+            <h2>Kontak</h2>
+            <p>Email: (isi email kamu)</p>
+            <p>WhatsApp: (isi nomor)</p>
+            <p>Instagram: (isi username)</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Nur Dwi Nova Pramajaya</p>
+    </footer>
+
+</body>
+</html>
